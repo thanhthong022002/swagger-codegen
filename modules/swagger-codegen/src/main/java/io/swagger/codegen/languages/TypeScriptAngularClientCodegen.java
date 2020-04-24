@@ -402,7 +402,7 @@ public class TypeScriptAngularClientCodegen extends AbstractTypeScriptClientCode
         if (name.length() == 0) {
             return "DefaultService";
         }
-        return initialCaps(name) + "Service";
+        return initialCaps(name) + "Api";
     }
 
     @Override
@@ -410,7 +410,7 @@ public class TypeScriptAngularClientCodegen extends AbstractTypeScriptClientCode
         if (name.length() == 0) {
             return "default.service";
         }
-        return camelize(name, true) + ".service";
+        return camelize(name, true);
     }
 
     @Override
